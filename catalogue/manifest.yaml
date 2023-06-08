@@ -10,7 +10,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: catalogue
-  labels: 
+  labels:
     name: catalogue
     tier: app
 spec:
@@ -20,7 +20,7 @@ spec:
     image: prawien/catalogue:k8
     envFrom:
     - configMapRef:
-      name: catalogue-config
+        name: catalogue-config
     resources:
       requests:
         cpu: "100m"

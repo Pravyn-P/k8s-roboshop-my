@@ -5,6 +5,7 @@ metadata:
   name: catalogue-config
 data:
   MONGO_URL: "mongodb://mongodb:80/catalogue"
+---
 apiVersion: v1
 kind: Pod
 metadata:

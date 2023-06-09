@@ -11,7 +11,7 @@ spec:
   - name: rabbitmq
     imagePullPolicy: Always
     image: rabbitmq
-    ports:
+  - ports:
       - containerPort: 5672
       - containerPort: 15672
 ---

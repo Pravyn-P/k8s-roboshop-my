@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: rabbitmq
-  labels: 
+  labels:
     name: rabbitmq
     tier: db
 spec:
@@ -24,9 +24,9 @@ spec:
     name: rabbitmq
     tier: db
   ports:
-    - port: 5672
-      name: amqp
-    - port: 15672
-      name: http
-    type: ClusterIp
+  - port: 5672
+    name: amqp
+  - port: 15672
+    name: http
+  type: ClusterIP
 ---
